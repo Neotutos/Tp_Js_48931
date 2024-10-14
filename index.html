@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar color de párrafos</title>
+    <style>
+        /* Estilo base para los párrafos */
+        p {
+            font-size: 16px;
+            transition: color 0.3s; /* Transición suave */
+            color: black; /* Color por defecto */
+        }
+        .azul {
+            color: blue; /* Color azul para la clase */
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+  <div>
+    <p>Este es el primer párrafo.</p>
+    <p>Este es el segundo párrafo.</p>
+    <p>Este es el tercer párrafo.</p>
+    <button onclick="cambiarColor()">Cambiar color a azul</button>
+  </div>
+  <div>
+
+    <h1>Formulario de Entrada</h1>
+    <form id="miFormulario" action="javascript:void(0);">
+        <label for="inputTexto">Ingresa un valor:</label>
+        <input type="text" id="inputTexto" placeholder="Escribe aquí...">
+        <button onclick="mostrarAlerta()">Mostrar Valor</button>
+    </form>
+
+  </div>
+
+  <div>
+
+    <h1>Mi Lista de Elementos: Click en cualquier elemento</h1>
+    <ul id="miLista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+
+  </div>
+
+  <div>
+
+    <h1>Ejercicio 2: Campo de botones</h1>
+    
+    <input type="text" id="miInput" placeholder="Escribe algo aquí...">
+    <button id="deshabilitarBtn">Deshabilitar Input</button>
+    <button id="habilitarBtn">Habilitar Input</button>
+  </div>
+    <div>
+
+      <h1>Guardar Correo Electrónico</h1>
+    <form id="emailForm" action="javascript:void(0);">
+        <label for="emailInput">Correo Electrónico:</label>
+        <input type="email" id="emailInput" placeholder="Introduce tu correo electrónico" required>
+        <button type="submit">Guardar Correo</button>
+    </form>
+    
+    <div id="correoGuardado" style="margin-top: 10px;"></div>
+    
+    <button id="eliminarBtn" style="display: none;">Eliminar Correo Guardado</button> 
+    </div>
+  
+</body>
+</html>
